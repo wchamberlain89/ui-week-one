@@ -118,10 +118,53 @@ header {
 		img {
 			height: 350px;
 		}
+		h1 {
+			color: white;
+		}
 	}
 
-	h1 {
+	.button-container {
+		margin-top: 80px;
+		max-width: 250px;
+	}
+
+	.btn {
+		@include align-center;
+		width: 100%;
+		margin-top: 20px;
 		color: white;
 	}
 
+	.btn.btn-warning {
+		background-color: #ff9c00;
+	}
+
+	.btn.btn-success {
+		background-color: white;
+		border: none;
+		color: #333;
+	}
+
+	svg {
+		width: 20px;
+		height: 20px;
+		margin-right: 5px;
+	}
+}
+
+
+.system-logos {
+	display: flex;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	height: 40px;
+	width: 200px;
+		div {
+			flex-grow: 1;
+		}
+		img {
+			height: 100%;
+			margin-left: 30px;
+		}
 }
