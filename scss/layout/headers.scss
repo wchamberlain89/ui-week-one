@@ -4,16 +4,20 @@ header {
 	background-color: #0b0d12;
 }
 
-.header-container {
+
+
+.menu-header-container {
 	max-width: 80%;
 	margin: auto;
 }
 
 .bliz-header {
 	display: flex;
+	height: 40px;
 	
 	a {
-		color: #b6b6b8;
+		color: #B6B6B8;
+		margin-right: 5px;
 	}
 
 	path {
@@ -26,6 +30,7 @@ header {
 		align-items: center;
 		img{
 			height: 35px;
+			margin-right: 20px;
 		}
 
 	}
@@ -35,17 +40,88 @@ header {
 		margin-left: auto;
 	}
 
-	.nav-link {
-		display: flex;
-	}
-
 	.bliz-dropdown svg {
 		width: 16px;
 	}
+
+}
+
+.nav-option {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
 }
 
 
 
 
 
+.ow-header {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	height: 50px;
+	background: rgba(0,0,0,0.75);
 
+	.nav-option {
+		margin: 12px;
+		a {
+			color: #b8b5b4;
+			margin-right: 5px;
+		}
+	}
+
+	.ow-header-left {
+		display: flex;
+		align-items: center;
+	}
+
+	.ow-header-right {
+		display: flex;
+		align-items: center;
+		svg {
+			width: 20px;
+			height: 20px;
+			margin: 12px;
+		}
+	}
+}
+
+
+.background-video, .landing {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 0;
+	min-height: 720px;
+	height: 100vh;
+	z-index: -90;
+	min-width: 100%;
+	overflow: hidden;
+}
+
+.landing {
+	z-index: -1;
+}
+
+
+
+.product-header {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+	.main-logo {
+		img {
+			height: 350px;
+		}
+	}
+
+	h1 {
+		color: white;
+	}
+
+}
