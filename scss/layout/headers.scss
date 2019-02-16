@@ -91,7 +91,7 @@ header {
 }
 
 
-.background-video, .landing {
+.background-video {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -103,6 +103,9 @@ header {
 	overflow: hidden;
 }
 
+.landing {
+	height: 100vh;
+}
 
 
 
@@ -171,7 +174,6 @@ header {
 
 
 .featured-news {
-	@include section-container;
 	padding: 90px 0px;
 		.inner-container {
 			@include align-center;
@@ -194,8 +196,4 @@ header {
 			color: white;
 			background-color: #00a5e2
 		}
-}
-
-.new-years {
-
 }
